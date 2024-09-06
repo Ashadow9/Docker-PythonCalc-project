@@ -33,8 +33,8 @@ In my VM, i have created the docker image, when i run this image, container will
 8. To run the docker image and to do the port mapping
 $ docker run -d -p <HostPortNumber>:<ContainerPortNumber> <ImageName>
 
-# -d represents the detached mode
-# -p represents port mapping
+ -d represents the detached mode
+ -p represents port mapping
 
 $ docker run -d -p 5001:5000 python-app
 
