@@ -64,6 +64,7 @@ Note: Before accessing the application, make sure to enable port 5001 in your VM
 - Source: Anywhere (0.0.0.0/0)
 - Port: 5001
 
-Screenshot:
-[Application Screenshot URL]
+Result:
+![Screenshot 2024-09-06 173302](https://github.com/user-attachments/assets/996566f7-19a5-4c21-af48-a58dae7576e5)
+
 
