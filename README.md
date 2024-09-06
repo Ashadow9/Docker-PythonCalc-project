@@ -7,75 +7,63 @@ Steps to Run the Project
 1. Install Git in the VM
 To install Git, use the following command:
 
-bash
-Copy code
+
 $ sudo apt install git -y
 Verify the installation:
 
-bash
-Copy code
+
 $ git --version
 2. Clone the Project Repository
 Use Git to clone this repository to your VM:
 
-bash
-Copy code
+
 $ git clone <RepositoryURL>
 3. Change Directory to the Project Folder
 Navigate to the cloned repository's directory:
 
-bash
-Copy code
+
 $ cd <DirectoryName>
 4. Verify the Project Files
 Check the contents of the directory to ensure the files have been copied:
 
-bash
-Copy code
+
 $ ls
 5. View the Dockerfile Contents
 To understand how the Docker image will be built, check the contents of the Dockerfile:
 
-bash
-Copy code
+
 $ cat <DockerfileName>
 6. Build the Docker Image
 Build the Docker image from the Dockerfile by running:
 
-bash
-Copy code
+
 $ docker build -t <ImageName> .
 Example:
 
-bash
-Copy code
+
 $ docker build -t python-app .
 7. Verify the Docker Image
 After the image is built, verify it was created successfully by listing the Docker images:
 
-bash
-Copy code
+
 $ docker images
 8. Run the Docker Container with Port Mapping
 To run the Docker container from the image and perform port mapping, use:
 
-bash
-Copy code
+
 $ docker run -d -p <HostPortNumber>:<ContainerPortNumber> <ImageName>
 -d runs the container in detached mode.
 -p sets up port forwarding between the host and container.
 Example:
 
-bash
-Copy code
+
 $ docker run -d -p 5001:5000 python-app
 In this example, the application inside the container listens on port 5000, and you access it via port 5001 on the host.
 
 9. Access the Application
 After running the container, access the application by opening the following URL in your browser:
 
-arduino
-Copy code
+
 http://<PublicIPofVM>:5001/
 Note: Before accessing the application, make sure to enable port 5001 in your VM's security group settings:
 
