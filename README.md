@@ -43,3 +43,5 @@ $ docker run -d -p 5001:5000 python-app
 
 Before accessing the application, enable port number 5001 for the instance
 Type: CustomTCP, Source: AnywhereIPv4, Port: 5001
+
+![Screenshot 2024-09-06 173302](https://github.com/user-attachments/assets/fe6081d6-97a1-480d-9354-f0dca2219a2c)
